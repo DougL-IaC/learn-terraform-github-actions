@@ -25,7 +25,7 @@ terraform {
 }
 
 provider "github" {
-token = "Qrog93kCW3jh2A.atlasv1.QDjhVEOY7lyEBiUU9NQWsLydyzBICzvWtSxjhjJuoCYgjQjgM6gnbaFA6SZ9w6SZihY"
+token = "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"
 
 provider "aws" {
   region = "us-east-1"
