@@ -8,7 +8,11 @@ terraform {
       source  = "hashicorp/random"
       version = "3.0.1"
     }
+    github = {
+      source = "integrations/github"
+	version = "~ 4.0"
   }
+}
   required_version = "~> 1.0"
 
   backend "remote" {
@@ -20,6 +24,8 @@ terraform {
   }
 }
 
+provider "github" {
+token = "Qrog93kCW3jh2A.atlasv1.QDjhVEOY7lyEBiUU9NQWsLydyzBICzvWtSxjhjJuoCYgjQjgM6gnbaFA6SZ9w6SZihY"
 
 provider "aws" {
   region = "us-east-1"
